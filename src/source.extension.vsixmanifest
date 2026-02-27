@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="f7198797-d75d-4a7b-93c6-7bb56907735b" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
-    <DisplayName>Font Sizer 2.0</DisplayName>
-    <Description xml:space="preserve">An easy way to change the font sizes in the editor and Visual Studio environment.</Description>
-    <MoreInfo>https://github.com/madskristensen/FontSizer</MoreInfo>
+    <Identity Id="7071cd60-3d6d-4e90-81b9-513a334fab4c" Version="1.1" Language="en-US" Publisher="Uwe Keim" />
+    <DisplayName>Font Sizer (Uwe Custom)</DisplayName>
+    <Description xml:space="preserve">An easy way to change the editor and Visual Studio environment font sizes, now with configurable environment step size.</Description>
+    <MoreInfo>https://github.com/UweKeim/FontSizer</MoreInfo>
     <License>Resources\LICENSE</License>
     <Icon>Resources\Icon.png</Icon>
     <PreviewImage>Resources\Icon.png</PreviewImage>
-    <Tags >font, presentation, zoom</Tags>
+    <Tags >font, presentation, zoom, customization</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)" />
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,19.0)">
       <ProductArchitecture>amd64</ProductArchitecture>
     </InstallationTarget>
-	  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,19.0)">
-		  <ProductArchitecture>arm64</ProductArchitecture>
-	  </InstallationTarget>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,19.0)">
+      <ProductArchitecture>arm64</ProductArchitecture>
+    </InstallationTarget>
   </Installation>
   <Prerequisites>
     <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />

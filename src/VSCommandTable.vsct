@@ -19,7 +19,7 @@
       <Menu guid="guidIncreaseFontSizePackage" id="MyMenu" priority="100" type="Menu">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_TOOLS_EXT_TOOLS"/>
         <Strings>
-          <ButtonText>Font Sizer</ButtonText>
+          <ButtonText>Font Sizer (Uwe)</ButtonText>
         </Strings>
       </Menu>
     </Menus>
@@ -68,7 +68,7 @@
   </KeyBindings>
 
   <Symbols>
-    <GuidSymbol name="guidIncreaseFontSizePackage" value="{1099b5c0-7023-4762-9cd9-008d1219c716}">
+    <GuidSymbol name="guidIncreaseFontSizePackage" value="{aedd563f-70ef-4c9f-9ea1-a754e30634ae}">
       <IDSymbol name="EditorGroup" value="0x1020" />
       <IDSymbol name="EnvironmentGroup" value="0x1021" />
       <IDSymbol name="MyMenu" value="0x1030" />
