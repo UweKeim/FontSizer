@@ -1,6 +1,6 @@
 ﻿using Community.VisualStudio.Toolkit;
-using Microsoft.VisualStudio.Shell;
 using FontSizer.Options;
+using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
 
