@@ -1,29 +1,31 @@
-﻿# Font Sizer
+﻿# Font Sizer (Uwe Custom)
 
-Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=KarlShifflettkdawg.FontSizer)
-or get the [CI build](http://vsixgallery.com/extension/f7198797-d75d-4a7b-93c6-7bb56907735b/).
+Public fork of [madskristensen/FontSizer](https://github.com/madskristensen/FontSizer) with an important behavior change for environment font sizing.
 
----------------------------------------
+## Download
 
-An easy way to change the font sizes in the editor and Visual Studio environment.
+Install the latest VSIX from this repository's releases:
 
-## This fork
+- [Latest release](https://github.com/UweKeim/FontSizer-UweCustom/releases/latest)
+- Direct VSIX download (current):
+  [FontSizer-UweCustom.vsix](https://github.com/UweKeim/FontSizer-UweCustom/releases/download/v1.1.0-uwecustom.1/FontSizer-UweCustom.vsix)
 
-This fork adds a configurable step size for the environment commands.
+## What changed in this fork
 
-- New option page: `Tools > Options > Font Sizer (Uwe) > General`
-- New option: **Environment font step** (default `1`, min `1`, max `10`)
-- The environment increase/decrease commands now use this configured value.
-
-### Credits
-A fork of the [FontSizer extension](https://github.com/craigeddy/FontSizer) that Mads Kristensen updated to support Visual Studio 2019.
+- Added an options page in Visual Studio:
+  `Tools > Options > Font Sizer (Uwe) > General`
+- Added **Environment font step** setting.
+- Default environment step is now **1** (instead of fixed **2**).
+- Allowed range for environment step: **1..10**.
+- The extension has its own VSIX identity, so it can be installed separately from the original extension.
 
 ## Features
-Quickly change the editor's font sizes or the environment's font size.
+
+Quickly change the editor font sizes or the Visual Studio environment font size.
 
 ![Tools menu](art/screenshot.png)
 
-Recommend assigning shortcut keys to each of the 4 commands. These are the commands I use:
+Recommended command shortcuts:
 
 - CTRL + Num Pad Arrow Up = Increase editor font sizes
 - CTRL + Num Pad Arrow Down = Decrease editor font sizes
@@ -31,7 +33,8 @@ Recommend assigning shortcut keys to each of the 4 commands. These are the comma
 - CTRL + Num Pad Arrow Left = Decrease environment font size
 
 ### Change Editor Font Size
-Each time the respective Editor increase font size or decrease font size command is invoked the following changes are made:
+
+Editor-related commands still use the same deltas as the original extension:
 
 - TextEditor changes by 2
 - StatementCompletion changes by 1
@@ -40,7 +43,17 @@ Each time the respective Editor increase font size or decrease font size command
 - CodeLensCategory changes by 1
 
 ### Change Environment Font Size
-Each time the respective increase/decrease environment command is invoked, the environment font size is changed by the configured **Environment font step** value.
+
+Environment-related commands now use the configurable **Environment font step** value from options.
+
+- Default: 1
+- Min: 1
+- Max: 10
+
+## Credits
+
+Originally based on [craigeddy/FontSizer](https://github.com/craigeddy/FontSizer), later updated by Mads Kristensen to support newer Visual Studio versions.
 
 ## License
+
 [Apache 2.0](LICENSE)
