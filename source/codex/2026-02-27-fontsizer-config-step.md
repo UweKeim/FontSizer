@@ -17,7 +17,7 @@
 - [x] Lokaler Branch erstellt: `feature/configurable-environment-step`
 - [x] Codeänderungen umgesetzt
 - [x] Build erfolgreich verifiziert
-- [ ] Commit + Push abgeschlossen
+- [x] Commit + Push abgeschlossen
 
 ## Entscheidungen
 - Separate Installation statt Überschreiben der Original-Extension.
